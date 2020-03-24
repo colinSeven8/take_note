@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>NoteTaker</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <style media="screen">
-      body {
-        text-align: center;
-        background-color: cornflowerblue;
-      }
-      h1 {
-        font-size: 40px;
-        color: white;
-      }
-      .delete {
-        margin-left: 20px;
-        color: red;
-        cursor: pointer;
-        text-align: right;
-      }
-      input {
-        width: 400px;
-        height: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 42px;
-        background-color: antiquewhite;
-      }
-      textarea {
-        width: 400px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 24px;
-        background-color: antiquewhite;
 
-      }
-      .data-title {
-        cursor: pointer;
-        font-size: 24px;
-      }
-      #results {
-        width: 400px;
-        height: 200px;
-        overflow: auto;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: antiquewhite;
-      }
-      #action-button {
-        display: inline-block;
-      }
-      #buttons {
-        margin: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Mongo Note App</h1>
-    <div id="user-input">
-        <p>Title</p>
-        <input type="text" id="title" />
-      <br>
-        <p>Note</p>
-        <textarea id="note"></textarea>
-      <div id="buttons">
-        <div id="action-button">
-          <button id="make-new">Submit</button>
-        </div>
-        <button id="clear-all">Delete All Notes</button>
+<head>
+  <meta charset="UTF-8">
+  <title>Take Note</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style media="screen">
+    body {
+      color: antiquewhite;
+      text-align: center;
+      background: #0F2027;
+      background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+      background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    }
+
+    h1 {
+      font-size: 40px;
+      color: antiquewhite;
+    }
+
+    .delete {
+      margin-left: 20px;
+      color: red;
+      cursor: pointer;
+      text-align: right;
+    }
+
+    input {
+      width: 400px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 42px;
+      background-color: antiquewhite;
+    }
+
+    textarea {
+      width: 400px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+      background-color: antiquewhite;
+
+    }
+
+    .data-title {
+      cursor: pointer;
+      font-size: 24px;
+    }
+
+    #results {
+      width: 400px;
+      height: 200px;
+      overflow: auto;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: antiquewhite;
+    }
+
+    #action-button {
+      display: inline-block;
+    }
+
+    #buttons {
+      margin: 10px;
+    }
+    button {
+      font-size: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Take Note...</h1>
+  <div id="user-input">
+    <h2>Title</h2>
+    <input type="text" id="title" />
+    <br>
+    <h2>Note</h2>
+    <textarea id="note"></textarea>
+    <div id="buttons">
+      <div id="action-button">
+        <button id="make-new">Keep It</button>
       </div>
+      <button id="clear-all">Delete All Notes</button>
     </div>
+  </div>
 
-    <div id="results"></div>
-    <script src="app.js"></script>
-  </body>
+  <div id="results"></div>
+  <script src="app.js"></script>
+</body>
+
 </html>
